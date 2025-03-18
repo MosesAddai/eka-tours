@@ -7,6 +7,178 @@
     <title>EKA Tours</title>
   </head>
   <body>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eka Tours - Home</title>
+    <style>
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF; /* Neutral White */
+            color: #79747E; /* Grayish Color */
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #DF6951; /* Warm color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* First Frame */
+        .first-frame {
+            background-color: #67ACDF; /* Light Blue */
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        .first-frame h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .first-frame p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Second Frame */
+        .second-frame {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            gap: 20px;
+        }
+
+        .frame-left,
+        .frame-right {
+            width: 45%;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #79747E; /* Grayish color */
+        }
+
+        .frame-left h2, 
+        .frame-right h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .frame-right {
+            background-color: #000000; /* Black color */
+        }
+
+        .inner-frame {
+            background-color: #67ACDF; /* Light Blue */
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .inner-frame p {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #DF6951; /* Warm color */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .promo-frame {
+            background-color: #000000; /* Black color */
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .promo-frame input,
+        .promo-frame button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .promo-frame input {
+            width: 250px;
+            background-color: #FFFFFF; /* White background for input */
+            color: #79747E;
+        }
+
+        .promo-frame button {
+            background-color: #67ACDF; /* Light Blue */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- First Frame (Main Heading and Text) -->
+    <div class="first-frame">
+        <h1>START YOUR JOURNEY WITH US. EKA TOURS.</h1>
+        <p>Feel The Ghanaian Experience</p>
+    </div>
+
+    <!-- Second Frame (Services and Tours Sections) -->
+    <div class="second-frame">
+        <!-- Left Frame (Services Section) -->
+        <div class="frame-left">
+            <h2>Services</h2>
+            <p>Explore our wide range of services for an unforgettable experience.</p>
+        </div>
+
+        <!-- Right Frame (Tours Section with Inner Frame for Tour Details) -->
+        <div class="frame-right">
+            <h2>Tours</h2>
+            <div class="inner-frame">
+                <p><strong>Tour Accra - Outside Accra</strong></p>
+                <p><strong>Services:</strong> Day/Night - Cars</p>
+                <p><strong>Dates:</strong> 07 Nov 25 - 13 Nov 25</p>
+                <p><strong>Passenger:</strong> 2 passengers</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with Promo Code Section -->
+    <footer>
+        <div class="promo-frame">
+            <input type="text" placeholder="+ Add Promo Code">
+            <button>Show Price</button>
+        </div>
+    </footer>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
